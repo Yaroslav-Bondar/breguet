@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Archivo Black Regular';
+	src: url('../fonts/archivo_black_regular.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/archivo_black_regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/archivo_black_regular.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/archivo_black_regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/archivo_black_regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/archivo_black_regular.svg#archivo_black_regular') format('svg'); /* Chrome < 4, Legacy iOS */
+}

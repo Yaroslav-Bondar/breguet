@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Roboto Condensed';
+	src: url('../fonts/roboto_condensed.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/roboto_condensed.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/roboto_condensed.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/roboto_condensed.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/roboto_condensed.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/roboto_condensed.svg#roboto_condensed') format('svg'); /* Chrome < 4, Legacy iOS */
+}
