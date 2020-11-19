@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
-    <script async src="js/hamburger.js"></script>
-    <script async src="js/slider.js"></script>
-    <script async src="js/ibg.js"></script>
-    <script async src="js/buttonUp.js"></script>
     <title>Breguet</title>
 </head>
 <body>
@@ -22,13 +18,13 @@
                 </div>
                 <div class="main-screen__slides ibg">
                     <img src="img/main-screne/background_3.jpg" alt="background">
-                 </div>    
+                 </div>
                 <div class="main-screen__slides ibg">
                     <img src="img/main-screne/background_4.jpg" alt="background">
-                 </div>    
+                 </div>
                 <div class="main-screen__slides ibg">
                     <img src="img/main-screne/background_5_2.jpg" alt="background">
-                 </div>    
+                 </div>
                     <div class="main-screen__wrapper">
                             <div class="main-screen__logo-area">
                                 <div class="main-screen__logo">
@@ -76,18 +72,18 @@
                                         </div>
                                     </div>
                                     <div class="main-screen__img-area">
-                                        <div class="main-screen__button button">
-                                            <div class="main-screen__button-text-block">
+                                        <button class="main-screen__button button">
+                                            <div class="main-screen__button-text-block button__text">
                                                 <a href="#" class="main-screen__button-text button__text">discover</a>
                                             </div>
                                             <div class="main-screen__button-img button__img">
                                                 <a href="#"><img src="img/button/01.svg" alt="arrow"></a>
                                             </div>
-                                        </div>
+                                        </button>
                                         <div class="main-screen__img-area-item">
                                             <!-- This is background -->
                                         </div>
-                                    </div> 
+                                    </div>
                                 </div>
                             </div>
                             <div class="main-screen__nav-area">
@@ -118,11 +114,12 @@
                             </div>
                         </div>
             <!-- Button to top -->
-            <a href="#" onclick="topFunction();return false;" class="button-up"><img src="img/arrows/03.png" alt="go to top"></a>
+            <a href="#" class="button-up"><img src="img/arrows/03.png" class="button-up__img" alt="go to top"></a>
             <!-- Button to top end -->
             </section>
             <section class="luxury">
                 <div class="luxury__wrapper">
+                  <div class="luxury__conteiner">
                     <div class="luxury__img">
                     </div>
                     <div class="luxury__clients">
@@ -147,15 +144,16 @@
                             </div>
                         </div>
                     </div>
+                  </div>
                     <div class="luxury__block">
                         <header class="luxury__header header">
                             <div class="luxury__header-title header__title">
                                 <h1 class="luxury__header-title-text header__title-text">luxury<br><span class="header__title-color">watch</span></h1>
                             </div>
                             <div class="luxury__header-text  header__text">
-                                Breguet is a highly regarded watch manufacturer. Over the years, 
+                                Breguet is a highly regarded watch manufacturer. Over the years,
                                 notable Breguet patrons and timepieces owners include King George III,
-                                Queen Victoria, Alexandre I of Russia, Napoléon Bonaparte, Ettore 
+                                Queen Victoria, Alexandre I of Russia, Napoléon Bonaparte, Ettore
                                 Bugatti, Sir Winston Churchill, Sergei Rachmaninoff, Gioachino Rossini,
                                 Arthur Rubinstein and so on. In particular, the Breguet & Fils, Paris No.
                                 2667 (1814) pocket watch ranks as one of the world's most expensive watches
@@ -165,30 +163,30 @@
                         <div class="luxury__link">
                             <a class="luxury__link-text link__text" href="#">go to catalogue</a>
                             <a class="luxury__link-img link__img" href="#"><img src="img/arrows/02.svg" alt="arrow"></a>
-                        </div>          
+                        </div>
                     </div>
                 </div>
             </section>
             <section class="popular">
                 <div class="popular__wrapper">
                     <header class="popular__header header">
-                        <div class="popular__button button">
-                            <div class="popular__button-text-block">
+                        <button class="popular__button button">
+                            <div class="popular__button-text-block button__text">
                                 <a href="#" class="popular__button-text button__text">full shop</a>
                             </div>
                             <div class="popular__button-img button__img">
                                 <a href="#"><img src="img/button/01.svg" alt="arrow"></a>
                             </div>
-                        </div>
+                        </button>
                         <div class="popular__header-container">
                             <div class="popular__header-title header__title">
                                 <h1 class="popular__header-title-text header__title-text"><span class="header__title-color">popular</span><br>watch</h1>
                             </div>
                             <div class="popular__header-text  header__text">
-                                Breguet's philosophy can be defined as a tireless process of creative search 
-                                and implementation of innovations, the desire to always 
-                                be one step ahead of its era and at the same time strictly 
-                                comply with the technical and aesthetic standards developed by A.L. 
+                                Breguet's philosophy can be defined as a tireless process of creative search
+                                and implementation of innovations, the desire to always
+                                be one step ahead of its era and at the same time strictly
+                                comply with the technical and aesthetic standards developed by A.L.
                                 Breguet and laid the foundations of modern watchmaking.
                             </div>
                         </div>
@@ -201,7 +199,7 @@
                                 </div>
                                 <div class="item-popular__descr">
                                     <a href="#" class="popular__descr item-popular__descr-text">Classique 7137</a>
-                                
+
                                 </div>
                             </div>
                         </div>
@@ -261,14 +259,14 @@
             <section class="video">
                 <div class="video__wrapper">
                     <header class="video__header">
-                        <div class="video__button button">
+                        <button class="video__button button">
                             <div class="video__button-text button__text">
                                 <a href="#" class="video__button-text button__text">play</a>
                             </div>
                             <div class="video__button-img button__img">
                                 <a href="#"><img src="img/button/02.svg" alt="arrow"></a>
                             </div>
-                        </div>
+                        </button>
                         <h1 class="video__header-item">
                             BREGUET<br>WATCH
                         </h1>
@@ -280,18 +278,18 @@
                     <div class="finish__container">
                         <h1 class="finish__header-text">
                             BREGUET UNVEILS THE <span class="header__title-color">BLUE</span> VERSION
-                            OF ITS CLASSIQUE TOURBILLON EXTRA-PLAT <span class="header__title-color">AUTOMATIQUE</span> 
+                            OF ITS CLASSIQUE TOURBILLON EXTRA-PLAT <span class="header__title-color">AUTOMATIQUE</span>
                         </h1>
                         <div class="finish__link">
                             <a class="finish__link-text link__text" href="#">learn more</a>
                             <a class="finish__link-img link__img" href="#"><img src="img/arrows/02.svg" alt="arrow"></a>
-                        </div>  
+                        </div>
                     </div>
                 </header>
                 <div class="clearfix"></div>
             </section>
         </main>
-        <footer class="footer"> 
+        <footer class="footer">
             <div class="footer__wrapper">
                 <div class="footer__conteiner">
                     <div class="footer__logo logo">
@@ -344,8 +342,13 @@
                         <a href="#" class="footer__links-item links__item white-space-no" id="footer__links-item-two">Legal Terms</a>
                         <a href="#" class="footer__links-item links__item white-space-no" id="footer__links-item-three">Subscribe to newsletter</a>
                     </div>
-                </div>     
+                </div>
             </div>
-        </footer> 
+        </footer>
+<script src="js/hamburger.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/ibg.js"></script>
+<script src="js/buttonUp.js"></script>
+<script src="js/showPopular.js"></script>
 </body>
 </html>
