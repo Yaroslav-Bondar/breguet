@@ -16,132 +16,6 @@
 		url('../fonts/archivo_black/archivo_black_regular.ttf') format('truetype'), /* Safari, Android, iOS */
 		url('../fonts/archivo_black/archivo_black_regular.svg#archivo_black_regular') format('svg'); /* Chrome < 4, Legacy iOS */
 }
-/* $$$$$ */
-html {
-    scroll-behavior: smooth;
-}
-:root {
-    --title-color: #214AC2;
-}
-/* body.lock {
-    overflow: hidden;
-} */
-html.lock {
-    overflow: hidden;
-}
-body {
-    font-family: 'Roboto Condensed';
-}
-.ibg {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-}
-.ibg img {
-    width: 0;
-    height: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    visibility: hidden;
-}
-.button {
-    width: 120px;
-    height: 120px;
-		padding: 0;
-    border-radius: 50%;
-		border: none;
-    box-shadow: 0px 0px 50px rgba(33, 74, 194, 0.5);
-    background-color: #214AC2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-		/* -moz-transition-property: background; */
-    transition: background .3s;
-		cursor: pointer;
-    /* cursor: pointer; */
-}
-.button:hover {
-    background: darkblue;
-}
-.button:hover * {
-	transform: scale(1.2);
-}
-.button__text {
-    font-family: 'Archivo Black Regular';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 90%;
-    /* identical to box height, or 13px */
-    color: #FFFFFF;
-		/* transition-property: transform; */
-    transition: all .3s;
-    text-decoration: none;
-}
-.button__img {
-    transition: transform .3s;
-}
-.clients__title {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 52px;
-    line-height: 90%;
-}
-.clients__subtitle {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 130%;
-}
-.header__title-text {
-    font-family: "Archivo Black Regular";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 52px;
-    line-height: 90%;
-    text-transform: uppercase;
-}
-.header__title-color {
-    color: var(--title-color);
-}
-.header__text {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 150%;
-    color: #1C2834;
-    opacity: 0.4;
-}
-.link__text {
-    text-decoration: none;
-    font-family: "Archivo Black Regular";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 90%;
-    /* identical to box height, or 13px */
-    color: #214AC2;
-    margin-right: 9px;
-    transition: color .3s ease-in-out;
-}
-.link__text:hover {
-    color: #837E7E;
-}
-.link__img img {
-    transition: transform .3s ease-in-out;
-
-}
-.link__img img:hover {
-    transform: scale(1.5);
-}
-.white-space-no {
-    white-space: pre;
-}
-/* $$$$$ */
 /* main-screen start */
 .main-screen {
     position: relative;
@@ -212,6 +86,7 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
     font-size: calc(32px + 20 * ((100vw - 320px) / (1280 - 320)));
+    word-wrap: break-word;
 }
 .main-screen__clients-area {
     width: 100%;
@@ -230,6 +105,7 @@ body {
     opacity: 0.9;
     margin-bottom: 12px;
     font-size: calc(42px + 10 * ((100vw - 320px) / (1280 - 320)));
+    word-wrap: break-word;
 }
 .main-screen__clients-subtitle {
     color: #FFFFFF;
@@ -284,6 +160,12 @@ body {
     cursor: pointer;
     transition: all .3s ease-in-out;
 }
+.main-screen__line-nav {
+    transition: 0.7s;
+    margin-bottom: 7px;
+    width: 19px;
+    border: 1px solid #FFFFFF;
+}
 .main-scren__line-nav-block:hover {
     transform: scale(1.15);
 }
@@ -296,13 +178,6 @@ body {
 .change .main-screen__line-nav {
     border-color: #214AC2;;
 }
-.main-screen__line-nav {
-    transition: 0.7s;
-    margin-bottom: 7px;
-    width: 19px;
-    border: 1px solid #FFFFFF;
-}
-
 .change div:nth-child(1) {
     -webkit-transform: rotate(-45deg) translate(-7px, 6.5px);
     transform: rotate(-45deg) translate(-7px, 6.5px);
@@ -391,7 +266,7 @@ body {
     right: 30px;
     z-index: 4;
     /* background: #214AC2; */
-		background: rgba(33, 74, 194, 0.8);;
+    background: rgba(33, 74, 194, 0.8);;
     padding: 11px 12px 11px 12px;
     border-radius: 50%;
     /* transition: background .5s ease-in-out; */
@@ -409,6 +284,13 @@ body {
 }
 .button-up:hover .button-up__img {
 		transform: scale(0.9);
+}
+@media (max-width:500px) {
+    .button-up {
+        bottom: 11px;
+        right: 4px;
+        padding: 9px 10px 9px 10px;
+    }
 }
 /* buton Up End */
 @media (max-width:1280px) {
@@ -456,10 +338,15 @@ body {
     }
     .main-screen__header-area {
         margin: 0 0 0 0;
-        width: 87.9%;
+        /* width: 87.9%; */
+        width: 73.9%;
     }
     .main-screen__header {
         margin: 104px 0 26.3% 0;
+    }
+    .main-scren__line-nav-block {
+        width: 55px;
+        height: 55px;
     }
 }
 @media (max-width:460px) {
@@ -757,14 +644,20 @@ body {
         align-items: center;
         position: absolute;
         width: 79%;
+/*
         min-height: 28.78%;
         bottom: -13%;
-				cursor: pointer;
+		padding: 20px 0;
+*/
+		min-height: 18.78%;
+		bottom: -16%;
+		padding: 20px 0;
+		cursor: pointer;
     }
-		.item-popular__descr:hover .popular__descr {
-				color: #214AC2;
-				opacity: 1;
-		}
+	.item-popular__descr:hover .popular__descr {
+		color: #214AC2;
+		opacity: 1;
+	}
     .item-popular__descr-text {
         font-family: "Archivo Black Regular";
         font-style: normal;
@@ -888,7 +781,7 @@ body {
         writing-mode: vertical-rl;
         transform: rotate(180deg);
         text-align: center;
-        background-image: url("../img/video/background-vertical_1.png");
+        background-image: url("../img/video/background-vertical.png");
         font-size: calc(112px + 60 * ((100vw - 320px) / (1280 - 320)));
    }
  .video__button {
@@ -939,7 +832,7 @@ body {
 }
 .finish__header-text {
     /* margin-bottom: 9.94%; */
-		margin-bottom: 40px;
+    margin-bottom: 40px;
     font-family: "Archivo Black Regular";
     font-style: normal;
     font-weight: normal;
@@ -950,6 +843,7 @@ body {
     /* or 29px */
     color: #070D13;
     text-transform: uppercase;
+    word-wrap: break-word;
 }
 .clearfix {
     clear: both;
